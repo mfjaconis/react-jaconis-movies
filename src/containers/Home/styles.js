@@ -56,3 +56,9 @@ export const Container = styled.section`
   width: 1500px;
   height: 100%;
 `
+
+export const ContainerButton = styled.div`
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+`
