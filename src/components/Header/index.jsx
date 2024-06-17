@@ -15,13 +15,13 @@ function Header() {
     } else {
       setChangeBrackground(false)
     }
-    console.log(window.pageYOffset)
   }
 
   return (
-    <Container changeBackground={changeBackground}>
-      <img src={Logo} alt="logo-jaconis-movies" />
-      <nav>
+    <>
+      <Container changeBackground={changeBackground}>
+        <img src={Logo} alt="logo-jaconis-movies" />
+
         <Menu>
           <Li isActive={pathname === '/'}>
             <Link to="/">Home</Link>
@@ -33,8 +33,8 @@ function Header() {
             <Link to="/series">Series</Link>
           </Li>
         </Menu>
-      </nav>
-    </Container>
+      </Container>
+    </>
   )
 }
 
