@@ -9,6 +9,9 @@ export const Container = styled.div`
     font-size: 24px;
     margin: 50px 0 20px 20px;
   }
+  .swiper-container {
+    overflow: hidden;
+  }
   .swiper-wrapper {
     display: flex;
   }
