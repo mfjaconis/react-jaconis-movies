@@ -46,7 +46,11 @@ function Detail() {
             <Cover>
               <img src={getImages(movie.poster_path)} />
             </Cover>
+<<<<<<< HEAD
             <div>Detalhess</div>
+=======
+            <div>Detalhe</div>
+>>>>>>> d187cd0fa31eedcc8bd97c596da7d94966405063
           </Container>
         </>
       )}
