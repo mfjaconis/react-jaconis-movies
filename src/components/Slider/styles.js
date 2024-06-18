@@ -10,6 +10,7 @@ export const Container = styled.div`
     margin: 50px 0 20px 20px;
   }
   .swiper-container {
+    width: 100%;
     overflow: hidden;
   }
   .swiper-wrapper {
