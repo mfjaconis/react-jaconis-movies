@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
+import Credits from '../../components/Credits'
 import SpanGenres from '../../components/SpanGenres'
 import {
   getMovieCredits,
@@ -15,7 +16,7 @@ function Detail() {
   const { id } = useParams()
   const [movie, setMovie] = useState()
   const [movieVideos, setMovieVideos] = useState()
-  const [movieCredit, setMovieCredit] = useState()
+  const [movieCredits, setMovieCredit] = useState()
   const [movieSimilar, setMovieSimilar] = useState()
 
   useEffect(() => {
@@ -50,7 +51,7 @@ function Detail() {
               <h2>{movie.title}</h2>
               <SpanGenres genres={movie.genres} />
               <p>{movie.overview}</p>
-              <div>Creditos</div>
+              <Credits credits={movieCredits} />
             </Info>
           </Container>
         </>
