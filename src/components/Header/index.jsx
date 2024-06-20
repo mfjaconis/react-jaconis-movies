@@ -20,7 +20,9 @@ function Header() {
   return (
     <>
       <Container $changeBackground={changeBackground}>
-        <img src={Logo} alt="logo-jaconis-movies" />
+        <Link to="/">
+          <img src={Logo} alt="logo-jaconis-movies" />
+        </Link>
 
         <Menu>
           <Li $isActive={pathname === '/'}>

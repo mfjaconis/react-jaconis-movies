@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import Card from '../Card'
 import { Container, Button } from './styles'
 
-function Slider({ info, title }) {
+function Slider({ info, title, isPeople }) {
   const navigate = useNavigate()
 
   return (
@@ -20,7 +20,13 @@ function Slider({ info, title }) {
         >
           {info.map((item, index) => (
             <SwiperSlide key={index}>
-              <Button onClick={() => navigate(`/detalhe/${item.id}`)}>
+              <Button
+                onClick={() =>
+                  isPeople
+                    ? navigate(`/detalhe/${item.id}/people`)
+                    : navigate(`/detalhe/${item.id}`)
+                }
+              >
                 <Card item={item} />
               </Button>
             </SwiperSlide>

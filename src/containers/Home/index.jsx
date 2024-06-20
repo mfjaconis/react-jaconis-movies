@@ -76,7 +76,7 @@ function Home() {
       {popularSeries && (
         <Slider info={popularSeries} title={'Series Populares'} />
       )}
-      {topPeople && <Slider info={topPeople} title={'Top Artistas'} />}
+      {topPeople && <Slider isPeople info={topPeople} title={'Top Artistas'} />}
     </>
   )
 }

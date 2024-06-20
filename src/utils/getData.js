@@ -55,6 +55,7 @@ export async function getMovieCredits(movieId) {
 
   return cast
 }
+
 export async function getMovieSimilar(movieId) {
   const {
     data: { results }
@@ -62,8 +63,15 @@ export async function getMovieSimilar(movieId) {
 
   return results
 }
+
 export async function getMoviesById(movieId) {
   const { data } = await api.get(`/movie/${movieId}`)
+
+  return data
+}
+
+export async function getInfoPopular(movieId) {
+  const { data } = await api.get(`/person/${movieId}`)
 
   return data
 }

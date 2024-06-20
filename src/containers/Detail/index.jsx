@@ -13,7 +13,7 @@ import {
 import { getImages } from './../../utils/getImages'
 import { Container, Background, Cover, Info, ContainerMovies } from './styles'
 
-function Detail() {
+function Detail({ info }) {
   const { id } = useParams()
   const [movie, setMovie] = useState()
   const [movieVideos, setMovieVideos] = useState()
