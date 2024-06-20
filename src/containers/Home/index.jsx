@@ -5,7 +5,6 @@ import Button from '../../components/Button'
 import Modal from '../../components/Modal'
 import Slider from '../../components/Slider'
 import {
-  getMovieVideos,
   getMovies,
   getPopularSeries,
   getTopMovies,

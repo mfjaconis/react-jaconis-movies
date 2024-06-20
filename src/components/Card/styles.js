@@ -10,6 +10,7 @@ export const Container = styled.div`
     border-radius: 30px;
     width: 300px;
     height: 100%;
+    min-height: 450px;
   }
 
   h3 {

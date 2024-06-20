@@ -17,3 +17,10 @@ export const Container = styled.div`
     display: flex;
   }
 `
+
+export const Button = styled.button`
+  cursor: pointer;
+  background: none;
+  text-decoration: none;
+  border: none;
+`

@@ -1,9 +1,13 @@
+import { useNavigate } from 'react-router-dom'
+
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import Card from '../Card'
-import { Container } from './styles'
+import { Container, Button } from './styles'
 
 function Slider({ info, title }) {
+  const navigate = useNavigate()
+
   return (
     <>
       <Container>
@@ -16,7 +20,9 @@ function Slider({ info, title }) {
         >
           {info.map((item, index) => (
             <SwiperSlide key={index}>
-              <Card item={item} />
+              <Button onClick={() => navigate(`/detalhe/${item.id}`)}>
+                <Card item={item} />
+              </Button>
             </SwiperSlide>
           ))}
         </Swiper>
