@@ -35,16 +35,14 @@ function Movies({ info }) {
   }, [])
 
   return (
-    <div>
-      <Container>
-        {moviesTheater && (
-          <Slider info={moviesTheater} title={'Atualmente nos cinemas'} />
-        )}
-        {popular && <Slider info={popular} title={'Populares'} />}
-        {topRated && <Slider info={topRated} title={'Filmes mais votados'} />}
-        {shortly && <Slider info={shortly} title={'Lançamentos em breve '} />}
-      </Container>
-    </div>
+    <Container>
+      {moviesTheater && (
+        <Slider info={moviesTheater} title={'Atualmente nos cinemas'} />
+      )}
+      {popular && <Slider info={popular} title={'Populares'} />}
+      {topRated && <Slider info={topRated} title={'Filmes mais votados'} />}
+      {shortly && <Slider info={shortly} title={'Lançamentos em breve '} />}
+    </Container>
   )
 }
 

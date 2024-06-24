@@ -24,6 +24,38 @@ export async function moviesInTheater() {
   return results
 }
 
+export async function seriesAiringToday() {
+  const {
+    data: { results }
+  } = await api.get('/tv/airing_today')
+
+  return results
+}
+
+export async function seriesOnTheAir() {
+  const {
+    data: { results }
+  } = await api.get('/tv/on_the_air')
+
+  return results
+}
+
+export async function seriesMostPopular() {
+  const {
+    data: { results }
+  } = await api.get('/tv/popular')
+
+  return results
+}
+
+export async function seriesTopRated() {
+  const {
+    data: { results }
+  } = await api.get('/movie/top_rated')
+
+  return results
+}
+
 export async function topMoviesRated() {
   const {
     data: { results }
