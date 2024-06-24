@@ -13,4 +13,4 @@ API utilizada para desenvolver o front-end:
 
 ### Acessa o meu site e se divirta com os filmes: [JaconisMovie](https://movies-dev-puce.vercel.app/)
 
-#### Em construção
+#### Projeto feito para praticar os conhecimentos em REACT.
