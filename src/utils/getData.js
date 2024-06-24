@@ -8,6 +8,38 @@ export async function getMovies() {
   return results[0]
 }
 
+export async function moviesPopular() {
+  const {
+    data: { results }
+  } = await api.get('/movie/popular')
+
+  return results
+}
+
+export async function moviesInTheater() {
+  const {
+    data: { results }
+  } = await api.get('/movie/now_playing')
+
+  return results
+}
+
+export async function topMoviesRated() {
+  const {
+    data: { results }
+  } = await api.get('/movie/top_rated')
+
+  return results
+}
+
+export async function moviesShortly() {
+  const {
+    data: { results }
+  } = await api.get('/movie/upcoming')
+
+  return results
+}
+
 export async function getTopMovies() {
   const {
     data: { results }
