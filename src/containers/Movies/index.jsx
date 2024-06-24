@@ -7,6 +7,7 @@ import {
   topMoviesRated,
   moviesShortly
 } from '../../utils/getData'
+import { Container } from './styles'
 
 function Movies({ info }) {
   const [moviesTheater, setMoviesTheater] = useState([])
@@ -35,12 +36,14 @@ function Movies({ info }) {
 
   return (
     <div>
-      {moviesTheater && (
-        <Slider info={moviesTheater} title={'Atualmente nos cinemas'} />
-      )}
-      {popular && <Slider info={popular} title={'Populares'} />}
-      {topRated && <Slider info={topRated} title={'Filmes mais votados'} />}
-      {shortly && <Slider info={shortly} title={'Lançamentos em breve '} />}
+      <Container>
+        {moviesTheater && (
+          <Slider info={moviesTheater} title={'Atualmente nos cinemas'} />
+        )}
+        {popular && <Slider info={popular} title={'Populares'} />}
+        {topRated && <Slider info={topRated} title={'Filmes mais votados'} />}
+        {shortly && <Slider info={shortly} title={'Lançamentos em breve '} />}
+      </Container>
     </div>
   )
 }
