@@ -1,16 +1,42 @@
-# ReactJs + Vite
+# React Jaconis Movies
 
- Para instalar as dependencias do projeto: 
- - yarn
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+![GitHub stars](https://img.shields.io/github/stars/mfjaconis/react-jaconis-movies?style=social)
+![GitHub forks](https://img.shields.io/github/forks/mfjaconis/react-jaconis-movies?style=social)
 
-Para iniciar o projeto: 
-- yarn dev
+React Jaconis Movies é um projeto desenvolvido com React que permite aos usuários explorar informações sobre filmes, como títulos, sinopses, avaliações e muito mais. Este projeto foi criado como uma forma de praticar e demonstrar habilidades em desenvolvimento front-end, consumo de APIs e gerenciamento de estado em aplicações React.
 
+## Funcionalidades
 
-API utilizada para desenvolver o front-end:
-- [themoviedb](https://www.themoviedb.org/?language=pt-BR)
+- **Listagem de Filmes**: Exibe uma lista de filmes populares.
+- **Busca de Filmes**: Permite aos usuários buscar filmes por título.
+- **Detalhes do Filme**: Exibe informações detalhadas sobre um filme selecionado, incluindo sinopse, elenco, avaliação e trailer.
+- **Responsivo**: Design responsivo para uma experiência consistente em dispositivos móveis e desktop.
 
+## Tecnologias Utilizadas
 
-### Acessa o meu site e se divirta com os filmes: [JaconisMovie](https://movies-dev-puce.vercel.app/)
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
+- **React Router**: Para gerenciamento de rotas na aplicação.
+- **Axios**: Para requisições HTTP à API de filmes.
+- **Styled Components**: Para estilização dos componentes.
+- **API de Filmes**: Utilização de uma API externa para obter dados sobre filmes (ex: The Movie Database - TMDb).[themoviedb](https://www.themoviedb.org/?language=pt-BR)
 
-#### Projeto feito para praticar os conhecimentos em REACT.
+## Como Executar o Projeto Localmente
+
+Siga os passos abaixo para rodar o projeto em sua máquina local:
+
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/mfjaconis/react-jaconis-movies.git
+ 
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd react-jaconis-movies
+ 
+3. Instale as dependências:
+   ```bash
+   yarn install
+   
+4. Inicie o servidor de desenvolvimento:
+  ```bash
+   yarn dev
