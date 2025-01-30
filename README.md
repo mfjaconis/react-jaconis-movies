@@ -1,9 +1,5 @@
 # React Jaconis Movies
 
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
-![GitHub stars](https://img.shields.io/github/stars/mfjaconis/react-jaconis-movies?style=social)
-![GitHub forks](https://img.shields.io/github/forks/mfjaconis/react-jaconis-movies?style=social)
-
 React Jaconis Movies é um projeto desenvolvido com React que permite aos usuários explorar informações sobre filmes, como títulos, sinopses, avaliações e muito mais. Este projeto foi criado como uma forma de praticar e demonstrar habilidades em desenvolvimento front-end, consumo de APIs e gerenciamento de estado em aplicações React.
 
 ## Funcionalidades
